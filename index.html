@@ -1,439 +1,958 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Creamos invitaciones digitales personalizadas para tus momentos especiales.">
-    <title>Lúmina Invitaciones | Momentos inolvidables</title>
+
+    <title>Lúmina | Invitaciones Digitales para Quinceañeras</title>
+
+    <meta name="description" content="Invitaciones digitales web personalizadas para quinceañeras. Diseños exclusivos, animaciones, música, galerías y confirmación de asistencia.">
+    <meta name="theme-color" content="#f8f5f0">
+
+    <!-- Open Graph (vista previa al compartir por WhatsApp, Facebook, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_PE">
+    <meta property="og:title" content="Lúmina | Invitaciones Digitales">
+    <meta property="og:description" content="Diseñamos invitaciones web únicas para tus quince años.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon simple en SVG (sin archivo extra) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f8f5f0'/%3E%3Ctext x='32' y='45' font-size='40' text-anchor='middle' font-family='serif' fill='%23222'%3EL%3C/text%3E%3C/svg%3E">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="header">
-    <a href="#inicio" class="logo">LÚMINA<span>.</span></a>
+<a href="#main" class="skip-link">Saltar al contenido</a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+<!-- ========== HEADER ========== -->
+<header class="header" id="header">
+    <div class="container header-container">
 
-    <nav class="nav" id="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#catalogo">Diseños</a>
-        <a href="#paquetes">Paquetes</a>
-        <a href="#proceso">Cómo funciona</a>
-        <a href="#contacto" class="nav-contact">Cotizar invitación ↗</a>
-    </nav>
+        <a href="#inicio" class="brand" aria-label="Lúmina, ir al inicio">
+            <span class="brand-symbol" aria-hidden="true">L</span>
+            <span class="brand-name">
+                LÚMINA
+                <small>INVITACIONES DIGITALES</small>
+            </span>
+        </a>
+
+        <button type="button" class="menu-toggle" id="menuToggle"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="nav" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Diseños</a>
+            <a href="#paquetes">Paquetes</a>
+            <a href="#proceso">Cómo funciona</a>
+            <a href="#preguntas">Preguntas</a>
+            <a href="#contacto" class="nav-cta">Cotizar <span aria-hidden="true">↗</span></a>
+        </nav>
+
+    </div>
 </header>
 
-<main>
-    <section class="hero" id="inicio">
+
+<main id="main">
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+
+    <div class="container hero-container">
+
         <div class="hero-content">
-            <span class="eyebrow">INVITACIONES DIGITALES PERSONALIZADAS</span>
-            <h1>Hay momentos que merecen una <em>invitación especial.</em></h1>
-            <p>
-                Diseñamos experiencias digitales únicas para celebrar
-                los momentos más importantes de tu vida.
+
+            <p class="hero-label">
+                <span class="label-line" aria-hidden="true"></span>
+                INVITACIONES DIGITALES PERSONALIZADAS
             </p>
 
-            <div class="hero-buttons">
-                <a href="#catalogo" class="btn btn-gold">Explorar diseños ↗</a>
-                <a href="#paquetes" class="btn btn-outline">Ver paquetes</a>
+            <h1 id="hero-title">
+                Una celebración
+                <br>
+                comienza con
+                <em>una invitación.</em>
+            </h1>
+
+            <p class="hero-description">
+                Diseñamos experiencias digitales únicas para tus quince años.
+                Un recuerdo especial que puedes compartir con todas las personas que amas.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#catalogo" class="btn btn-primary">
+                    Explorar diseños <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#paquetes" class="btn btn-secondary">Ver paquetes</a>
             </div>
 
-            <div class="hero-note">
-                <span>✦</span> Diseños exclusivos · Experiencias interactivas
-            </div>
+            <ul class="hero-trust">
+                <li class="trust-item">
+                    <span class="trust-icon" aria-hidden="true">✦</span>
+                    Diseños personalizados
+                </li>
+                <li class="trust-item">
+                    <span class="trust-icon" aria-hidden="true">♡</span>
+                    Hechos con dedicación
+                </li>
+            </ul>
+
         </div>
 
-        <div class="hero-visual">
-            <div class="hero-frame">
-                <div class="frame-decoration">✦</div>
-                <span class="frame-small">UNA CELEBRACIÓN ESPECIAL</span>
-                <h2>Mis XV<br><em>Años</em></h2>
-                <div class="frame-line"></div>
-                <p>Una noche para recordar</p>
-                <span class="frame-date">15 · 08 · 2026</span>
+
+        <!-- Tarjeta decorativa: se oculta a lector de pantalla -->
+        <div class="hero-showcase" aria-hidden="true">
+
+            <div class="showcase-decoration decoration-one"></div>
+            <div class="showcase-decoration decoration-two"></div>
+
+            <div class="showcase-card showcase-back">
+                <div class="showcase-back-image"></div>
             </div>
-            <span class="floating-star star-one">✦</span>
-            <span class="floating-star star-two">✧</span>
+
+            <div class="showcase-card showcase-main">
+
+                <div class="showcase-image">
+                    <div class="showcase-overlay"></div>
+
+                    <div class="showcase-content">
+                        <span class="showcase-top">UNA NOCHE MÁGICA</span>
+                        <span class="showcase-number">XV</span>
+
+                        <h2>Mis Quince <em>Años</em></h2>
+
+                        <div class="showcase-divider"></div>
+
+                        <p>Una historia comienza con un sueño...</p>
+
+                        <span class="showcase-date">15 · 08 · 2027</span>
+                    </div>
+                </div>
+
+                <div class="showcase-bottom">
+                    <span>INVITACIÓN DIGITAL</span>
+                    <span>01 / 06</span>
+                </div>
+
+            </div>
+
+            <div class="showcase-floating floating-note">
+                <span class="floating-note-icon">♡</span>
+                <div>
+                    <strong>Un recuerdo único</strong>
+                    <small>Diseñado especialmente para ti</small>
+                </div>
+            </div>
+
+            <div class="showcase-floating floating-tag">
+                <span>✦</span> PERSONALIZABLE
+            </div>
+
         </div>
-    </section>
-
-    <section class="intro section" id="nosotros">
-        <span class="eyebrow">MÁS QUE UNA INVITACIÓN</span>
-        <h2>El comienzo de un recuerdo <em>inolvidable.</em></h2>
-        <p>
-            Cada celebración tiene una historia. Nosotros la convertimos
-            en una experiencia digital diseñada para emocionar, sorprender
-            y compartir con quienes más quieres.
-        </p>
-    </section>
-
-    <section class="catalog section" id="catalogo">
-       
-<section class="catalog section" id="catalogo">
-
-    <div class="section-heading">
-        <div>
-            <span class="eyebrow">NUESTRAS INSPIRACIONES</span>
-            <h2>Diseños para cada <em>momento.</em></h2>
-        </div>
-        <p>Explora nuestros estilos y encuentra la inspiración para tu celebración.</p>
-    </div>
-
-    <div class="category-list">
-        <button class="filter active" data-filter="todos">Todos</button>
-        <button class="filter" data-filter="xv">XV años</button>
-        <button class="filter" data-filter="bodas">Bodas</button>
-        <button class="filter" data-filter="cumpleanos">Cumpleaños</button>
-        <button class="filter" data-filter="otros">Otros eventos</button>
-    </div>
-
-    <div class="design-grid">
-
-        <article class="design-card" data-category="xv">
-            <div class="design-image design-xv">
-                <span class="design-tag">XV AÑOS</span>
-                <div class="mockup">
-                    <span>Mis XV Años</span>
-                    <strong>Una noche<br>de ensueño</strong>
-                    <small>15 · 08 · 2026</small>
-                </div>
-                <button class="preview-btn"
-                    data-title="Royal Blue"
-                    data-subtitle="Una noche de ensueño"
-                    data-date="15 DE AGOSTO DE 2026"
-                    data-theme="xv">
-                    Ver vista previa ↗
-                </button>
-            </div>
-            <div class="design-info">
-                <div>
-                    <h3>Royal Blue</h3>
-                    <p>Elegante · Azul y dorado</p>
-                </div>
-                <span>01</span>
-            </div>
-        </article>
-
-        <article class="design-card" data-category="xv">
-            <div class="design-image design-princess">
-                <span class="design-tag">XV AÑOS</span>
-                <div class="mockup">
-                    <span>Mis XV Años</span>
-                    <strong>Un sueño<br>hecho realidad</strong>
-                    <small>UNA FECHA ESPECIAL</small>
-                </div>
-                <button class="preview-btn"
-                    data-title="Pink Princess"
-                    data-subtitle="Un sueño hecho realidad"
-                    data-date="UNA FECHA ESPECIAL"
-                    data-theme="princess">
-                    Ver vista previa ↗
-                </button>
-            </div>
-            <div class="design-info">
-                <div>
-                    <h3>Pink Princess</h3>
-                    <p>Romántico · Rosa y flores</p>
-                </div>
-                <span>02</span>
-            </div>
-        </article>
-
-        <article class="design-card" data-category="bodas">
-            <div class="design-image design-wedding">
-                <span class="design-tag">BODAS</span>
-                <div class="mockup">
-                    <span>Nos casamos</span>
-                    <strong>Una historia<br>para siempre</strong>
-                    <small>EL GRAN DÍA</small>
-                </div>
-                <button class="preview-btn"
-                    data-title="Forever"
-                    data-subtitle="Una historia para siempre"
-                    data-date="NUESTRO GRAN DÍA"
-                    data-theme="wedding">
-                    Ver vista previa ↗
-                </button>
-            </div>
-            <div class="design-info">
-                <div>
-                    <h3>Forever</h3>
-                    <p>Minimalista · Beige y natural</p>
-                </div>
-                <span>03</span>
-            </div>
-        </article>
-
-        <article class="design-card" data-category="cumpleanos">
-            <div class="design-image design-birthday">
-                <span class="design-tag">CUMPLEAÑOS</span>
-                <div class="mockup">
-                    <span>Estás invitado</span>
-                    <strong>Let's<br>Celebrate!</strong>
-                    <small>UNA GRAN FIESTA</small>
-                </div>
-                <button class="preview-btn"
-                    data-title="Party Time"
-                    data-subtitle="Let's Celebrate!"
-                    data-date="TE ESPERAMOS"
-                    data-theme="birthday">
-                    Ver vista previa ↗
-                </button>
-            </div>
-            <div class="design-info">
-                <div>
-                    <h3>Party Time</h3>
-                    <p>Divertido · Colorido</p>
-                </div>
-                <span>04</span>
-            </div>
-        </article>
 
     </div>
 
-    <p class="catalog-note">
-        Estos diseños son demostraciones. Personalizamos cada invitación
-        con los nombres, fotografías, colores y datos de tu evento.
-    </p>
+
+    <div class="hero-bottom" aria-hidden="true">
+        <div class="container hero-bottom-container">
+            <span>DISEÑAMOS MOMENTOS</span>
+            <span class="hero-bottom-line"></span>
+            <span>PARA RECORDAR SIEMPRE</span>
+        </div>
+    </div>
 
 </section>
 
-<!-- VENTANA DE VISTA PREVIA -->
 
-<!-- VENTANA DE VISTA PREVIA -->
-<div class="preview-modal" id="previewModal">
+<!-- ========== INTRO ========== -->
+<section class="intro section" id="nosotros" aria-labelledby="intro-title">
 
-    <div class="preview-container invitation-demo">
+    <div class="container intro-container">
 
-        <button class="preview-close" id="closePreview">×</button>
-
-        <div class="demo-topbar">
-            <span>DEMO INTERACTIVA</span>
-            <span>INVITACIÓN DIGITAL</span>
+        <div class="intro-left">
+            <span class="section-kicker">UNA EXPERIENCIA DIFERENTE</span>
+            <h2 id="intro-title">
+                No es solo una invitación.
+                <em>Es el primer recuerdo.</em>
+            </h2>
         </div>
 
-        <div class="demo-cover" id="demoCover">
-            <span class="demo-ornament">✦</span>
-            <p class="demo-overline">ESTÁS INVITADO A CELEBRAR</p>
-
-            <h2 id="previewTitle">Mis XV Años</h2>
-
-            <div class="demo-separator"></div>
-
-            <p class="demo-name" id="previewSubtitle">
-                Una noche de ensueño
-            </p>
-
-            <p class="demo-date" id="previewDate">
-                15 DE AGOSTO DE 2027
-            </p>
-
-            <span class="demo-ornament">✧</span>
-
-            <button class="demo-open" id="openDemo">
-                ABRIR INVITACIÓN ↓
-            </button>
-        </div>
-
-        <div class="demo-details" id="demoDetails">
-
-            <span class="eyebrow">UN DÍA MUY ESPECIAL</span>
-            <h3>¡Queremos compartirlo contigo!</h3>
-
+        <div class="intro-right">
             <p>
-                Hay momentos que merecen ser celebrados
-                junto a las personas que más queremos.
-                Nos encantaría contar con tu presencia.
+                Imagina que tus invitados reciben un enlace, lo abren desde su celular
+                y descubren una invitación que refleja exactamente cómo soñaste tu celebración.
             </p>
+            <p>
+                Música, fotografías, animaciones, ubicación y detalles especiales
+                en una experiencia creada exclusivamente para ti.
+            </p>
+        </div>
 
-            <div class="demo-countdown">
-                <div><strong id="days">000</strong><small>DÍAS</small></div>
-                <div><strong id="hours">00</strong><small>HORAS</small></div>
-                <div><strong id="minutes">00</strong><small>MINUTOS</small></div>
-                <div><strong id="seconds">00</strong><small>SEGUNDOS</small></div>
+    </div>
+
+</section>
+
+
+<!-- ========== CATÁLOGO ========== -->
+<section class="catalog section" id="catalogo" aria-labelledby="catalog-title">
+
+    <div class="container">
+
+        <div class="catalog-header">
+
+            <div class="catalog-heading">
+                <span class="section-kicker">NUESTRA COLECCIÓN</span>
+                <h2 id="catalog-title">Encuentra tu <em>estilo ideal.</em></h2>
+                <p>Explora diferentes estilos y descubre cómo podría lucir tu invitación.</p>
             </div>
 
-            <div class="demo-event">
-                <span>📅</span>
-                <div>
-                    <strong>Fecha del evento</strong>
-                    <p id="eventDateText">15 de agosto de 2027</p>
-                </div>
+            <div class="catalog-counter">
+                <span class="counter-number" id="catalogCount" aria-live="polite">06</span>
+                <span class="counter-label">
+                    DISEÑOS
+                    <br>
+                    DE INSPIRACIÓN
+                </span>
             </div>
-
-            <div class="demo-event">
-                <span>📍</span>
-                <div>
-                    <strong>Lugar de celebración</strong>
-                    <p>Salón de eventos · Dirección de ejemplo</p>
-                </div>
-            </div>
-
-            <a class="demo-map" href="https://www.google.com/maps/search/?api=1&query=salon+de+eventos+Lima+Peru"
-               target="_blank" rel="noopener">
-                VER UBICACIÓN ↗
-            </a>
-
-            <div class="demo-confirm">
-                <h3>¿Nos acompañarás?</h3>
-                <p>Nos encantaría contar contigo en este día especial.</p>
-
-                <a href="#" id="demoRSVP" class="demo-rsvp">
-                    CONFIRMAR ASISTENCIA ↗
-                </a>
-            </div>
-
-            <p class="demo-footer">HECHO CON ♥ PARA MOMENTOS INOLVIDABLES</p>
 
         </div>
 
-        <div class="demo-bottom">
-            <p>Esta es una demostración. Los datos y la ubicación son ilustrativos.</p>
-            <a href="#" id="previewContact" class="btn btn-gold">
-                QUIERO UNA INVITACIÓN COMO ESTA ↗
+
+        <!-- Filtros -->
+        <div class="catalog-filters" id="catalogFilters" role="group" aria-label="Filtrar diseños por estilo">
+            <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+            <button type="button" class="filter-btn" data-filter="princesa" aria-pressed="false">Princesa</button>
+            <button type="button" class="filter-btn" data-filter="floral" aria-pressed="false">Floral</button>
+            <button type="button" class="filter-btn" data-filter="fantasia" aria-pressed="false">Fantasía</button>
+            <button type="button" class="filter-btn" data-filter="elegante" aria-pressed="false">Elegante</button>
+            <button type="button" class="filter-btn" data-filter="moderno" aria-pressed="false">Moderno</button>
+        </div>
+
+
+        <!-- Grilla -->
+        <div class="catalog-grid" id="catalogGrid">
+
+            <!-- Diseño 01 -->
+            <article class="design-card" data-category="princesa" data-design="Royal Blue">
+                <div class="design-image">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+                         alt="Inspiración elegante para invitación Royal Blue"
+                         width="900" height="1125" loading="lazy" decoding="async">
+                    <div class="design-overlay"></div>
+                    <span class="design-number" aria-hidden="true">01</span>
+                    <span class="design-badge">MÁS ELEGANTE</span>
+                    <button type="button" class="design-view" data-preview="royal" aria-label="Ver diseño Royal Blue">
+                        <span>Ver diseño</span><span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+                <div class="design-info">
+                    <div class="design-title">
+                        <h3>Royal Blue</h3>
+                        <span class="design-category">PRINCESA</span>
+                    </div>
+                    <p>Una noche de cuento con tonos azules, detalles brillantes y elegancia.</p>
+                    <button type="button" class="design-contact" data-design="Royal Blue">
+                        Solicitar este diseño <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Diseño 02 -->
+            <article class="design-card" data-category="floral" data-design="Pink Dream">
+                <div class="design-image">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80"
+                         alt="Inspiración floral rosa Pink Dream"
+                         width="900" height="1125" loading="lazy" decoding="async">
+                    <div class="design-overlay"></div>
+                    <span class="design-number" aria-hidden="true">02</span>
+                    <button type="button" class="design-view" data-preview="pink" aria-label="Ver diseño Pink Dream">
+                        <span>Ver diseño</span><span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+                <div class="design-info">
+                    <div class="design-title">
+                        <h3>Pink Dream</h3>
+                        <span class="design-category">FLORAL</span>
+                    </div>
+                    <p>Flores delicadas, tonos rosados y una estética romántica.</p>
+                    <button type="button" class="design-contact" data-design="Pink Dream">
+                        Solicitar este diseño <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Diseño 03 -->
+            <article class="design-card" data-category="fantasia" data-design="Butterfly Garden">
+                <div class="design-image">
+                    <img src="https://images.unsplash.com/photo-1493976042213-8dbf9f4e8f13?auto=format&fit=crop&w=900&q=80"
+                         alt="Inspiración jardín y fantasía Butterfly Garden"
+                         width="900" height="1125" loading="lazy" decoding="async">
+                    <div class="design-overlay"></div>
+                    <span class="design-number" aria-hidden="true">03</span>
+                    <span class="design-badge">FANTASÍA</span>
+                    <button type="button" class="design-view" data-preview="butterfly" aria-label="Ver diseño Butterfly Garden">
+                        <span>Ver diseño</span><span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+                <div class="design-info">
+                    <div class="design-title">
+                        <h3>Butterfly Garden</h3>
+                        <span class="design-category">FANTASÍA</span>
+                    </div>
+                    <p>Un jardín mágico lleno de flores, mariposas y colores suaves.</p>
+                    <button type="button" class="design-contact" data-design="Butterfly Garden">
+                        Solicitar este diseño <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Diseño 04 -->
+            <article class="design-card" data-category="elegante" data-design="Golden Night">
+                <div class="design-image">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80"
+                         alt="Inspiración de celebración elegante en negro y dorado"
+                         width="900" height="1125" loading="lazy" decoding="async">
+                    <div class="design-overlay"></div>
+                    <span class="design-number" aria-hidden="true">04</span>
+                    <button type="button" class="design-view" data-preview="gold" aria-label="Ver diseño Golden Night">
+                        <span>Ver diseño</span><span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+                <div class="design-info">
+                    <div class="design-title">
+                        <h3>Golden Night</h3>
+                        <span class="design-category">ELEGANTE</span>
+                    </div>
+                    <p>Negro, dorado y detalles sofisticados para una celebración inolvidable.</p>
+                    <button type="button" class="design-contact" data-design="Golden Night">
+                        Solicitar este diseño <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Diseño 05 -->
+            <article class="design-card" data-category="fantasia" data-design="Enchanted Garden">
+                <div class="design-image">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80"
+                         alt="Inspiración de bosque encantado"
+                         width="900" height="1125" loading="lazy" decoding="async">
+                    <div class="design-overlay"></div>
+                    <span class="design-number" aria-hidden="true">05</span>
+                    <button type="button" class="design-view" data-preview="forest" aria-label="Ver diseño Enchanted Garden">
+                        <span>Ver diseño</span><span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+                <div class="design-info">
+                    <div class="design-title">
+                        <h3>Enchanted Garden</h3>
+                        <span class="design-category">FANTASÍA</span>
+                    </div>
+                    <p>Inspirado en bosques mágicos, naturaleza y luces encantadas.</p>
+                    <button type="button" class="design-contact" data-design="Enchanted Garden">
+                        Solicitar este diseño <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Diseño 06 -->
+            <article class="design-card" data-category="moderno" data-design="Minimal Elegance">
+                <div class="design-image">
+                    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=80"
+                         alt="Inspiración minimalista elegante"
+                         width="900" height="1125" loading="lazy" decoding="async">
+                    <div class="design-overlay"></div>
+                    <span class="design-number" aria-hidden="true">06</span>
+                    <span class="design-badge">MINIMALISTA</span>
+                    <button type="button" class="design-view" data-preview="minimal" aria-label="Ver diseño Minimal Elegance">
+                        <span>Ver diseño</span><span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+                <div class="design-info">
+                    <div class="design-title">
+                        <h3>Minimal Elegance</h3>
+                        <span class="design-category">MODERNO</span>
+                    </div>
+                    <p>Una propuesta limpia, sofisticada y atemporal.</p>
+                    <button type="button" class="design-contact" data-design="Minimal Elegance">
+                        Solicitar este diseño <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+
+        <div class="catalog-footer">
+            <p>¿Tienes una idea diferente? Podemos crear un diseño desde cero.</p>
+            <a href="#contacto" class="text-link">
+                Cuéntanos tu idea <span aria-hidden="true">↗</span>
             </a>
         </div>
 
     </div>
+
+</section>
+
+
+<!-- ========== PERSONALIZACIÓN ========== -->
+<section class="personalization section" aria-labelledby="custom-title">
+
+    <div class="container personalization-container">
+
+        <div class="personalization-visual" aria-hidden="true">
+            <div class="personalization-image image-one"></div>
+            <div class="personalization-image image-two"></div>
+            <div class="personalization-stamp">
+                <span>100%</span>
+                <small>PERSONALIZADO</small>
+            </div>
+        </div>
+
+
+        <div class="personalization-content">
+
+            <span class="section-kicker">CREADO PARA TI</span>
+
+            <h2 id="custom-title">
+                Tu celebración.
+                <br>
+                Tu estilo.
+                <em>Tu historia.</em>
+            </h2>
+
+            <p>
+                No tienes que elegir una invitación exactamente como aparece en el catálogo.
+                Podemos adaptar cada diseño a lo que imaginas.
+            </p>
+
+            <ul class="custom-list">
+                <li class="custom-item">
+                    <span class="custom-icon" aria-hidden="true">✦</span>
+                    <div>
+                        <strong>Colores y temática</strong>
+                        <small>Tu paleta favorita y estilo de celebración.</small>
+                    </div>
+                </li>
+                <li class="custom-item">
+                    <span class="custom-icon" aria-hidden="true">✦</span>
+                    <div>
+                        <strong>Fotografías</strong>
+                        <small>Momentos especiales y recuerdos.</small>
+                    </div>
+                </li>
+                <li class="custom-item">
+                    <span class="custom-icon" aria-hidden="true">✦</span>
+                    <div>
+                        <strong>Música y animaciones</strong>
+                        <small>Detalles que hacen la invitación única.</small>
+                    </div>
+                </li>
+                <li class="custom-item">
+                    <span class="custom-icon" aria-hidden="true">✦</span>
+                    <div>
+                        <strong>Contenido personalizado</strong>
+                        <small>Textos, fechas, lugares y mucho más.</small>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="#contacto" class="btn btn-primary">
+                Diseñar mi invitación <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========== PAQUETES ========== -->
+<section class="packages section" id="paquetes" aria-labelledby="packages-title">
+
+    <div class="container">
+
+        <div class="packages-header">
+            <span class="section-kicker">NUESTROS PAQUETES</span>
+            <h2 id="packages-title">Una invitación para cada <em>celebración.</em></h2>
+            <p>
+                Elige la experiencia que más se adapte a lo que estás imaginando.
+                Todos nuestros diseños son personalizables.
+            </p>
+        </div>
+
+
+        <div class="packages-grid">
+
+            <!-- Básica -->
+            <article class="package-card">
+                <div class="package-top">
+                    <h3 class="package-name">BÁSICA INTERACTIVA</h3>
+                    <span class="package-number" aria-hidden="true">01</span>
+                </div>
+
+                <p class="package-price" aria-label="80 soles">
+                    <span class="currency" aria-hidden="true">S/</span>
+                    <span class="price" aria-hidden="true">80</span>
+                </p>
+
+                <p class="package-description">
+                    Todo lo esencial para compartir los detalles de tu celebración de una forma especial.
+                </p>
+
+                <div class="package-divider"></div>
+
+                <ul class="package-features">
+                    <li><span aria-hidden="true">✓</span> Diseño web personalizado</li>
+                    <li><span aria-hidden="true">✓</span> Música de fondo a elección</li>
+                    <li><span aria-hidden="true">✓</span> Fecha y hora del evento</li>
+                    <li><span aria-hidden="true">✓</span> Dirección y Google Maps</li>
+                    <li><span aria-hidden="true">✓</span> Código de vestimenta</li>
+                    <li><span aria-hidden="true">✓</span> Enlace exclusivo</li>
+                </ul>
+
+                <button type="button" class="package-button" data-package="Básica Interactiva - S/80">
+                    Elegir paquete <span aria-hidden="true">↗</span>
+                </button>
+            </article>
+
+
+            <!-- Premium -->
+            <article class="package-card package-featured">
+                <div class="package-ribbon">MÁS ELEGIDO</div>
+
+                <div class="package-top">
+                    <h3 class="package-name">PREMIUM</h3>
+                    <span class="package-number" aria-hidden="true">02</span>
+                </div>
+
+                <p class="package-price" aria-label="150 soles">
+                    <span class="currency" aria-hidden="true">S/</span>
+                    <span class="price" aria-hidden="true">150</span>
+                </p>
+
+                <p class="package-description">
+                    Una experiencia más completa con fotografías, cuenta regresiva y detalles especiales.
+                </p>
+
+                <div class="package-divider"></div>
+
+                <ul class="package-features">
+                    <li><span aria-hidden="true">✓</span> Todo lo de Básica</li>
+                    <li><span aria-hidden="true">✓</span> Cuenta regresiva</li>
+                    <li><span aria-hidden="true">✓</span> Galería de fotografías</li>
+                    <li><span aria-hidden="true">✓</span> Sección de regalos</li>
+                    <li><span aria-hidden="true">✓</span> Efectos visuales</li>
+                    <li><span aria-hidden="true">✓</span> Detalles adicionales</li>
+                </ul>
+
+                <button type="button" class="package-button package-button-primary" data-package="Premium - S/150">
+                    Elegir paquete <span aria-hidden="true">↗</span>
+                </button>
+            </article>
+
+
+            <!-- Luxury -->
+            <article class="package-card">
+                <div class="package-top">
+                    <h3 class="package-name">LUXURY</h3>
+                    <span class="package-number" aria-hidden="true">03</span>
+                </div>
+
+                <p class="package-price package-range" aria-label="De 200 a 280 soles">
+                    <span class="currency" aria-hidden="true">S/</span>
+                    <span class="price" aria-hidden="true">200</span>
+                    <span class="price-separator" aria-hidden="true">—</span>
+                    <span class="price" aria-hidden="true">280</span>
+                </p>
+
+                <p class="package-description">
+                    Una experiencia exclusiva, interactiva y diseñada para sorprender a tus invitados.
+                </p>
+
+                <div class="package-divider"></div>
+
+                <ul class="package-features">
+                    <li><span aria-hidden="true">✓</span> Diseño exclusivo y elaborado</li>
+                    <li><span aria-hidden="true">✓</span> Animaciones avanzadas</li>
+                    <li><span aria-hidden="true">✓</span> Música personalizada</li>
+                    <li><span aria-hidden="true">✓</span> Galería cronológica</li>
+                    <li><span aria-hidden="true">✓</span> Confirmación RSVP</li>
+                    <li><span aria-hidden="true">✓</span> Experiencia interactiva</li>
+                </ul>
+
+                <button type="button" class="package-button" data-package="Luxury - S/200 a S/280">
+                    Cotizar Luxury <span aria-hidden="true">↗</span>
+                </button>
+            </article>
+
+        </div>
+
+
+        <p class="packages-note">
+            El precio final del paquete Luxury depende de las funcionalidades
+            y el nivel de personalización.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ========== EXPERIENCIA ========== -->
+<section class="experience section" aria-labelledby="experience-title">
+
+    <div class="container">
+
+        <div class="experience-heading">
+            <span class="section-kicker">UNA NUEVA FORMA DE INVITAR</span>
+            <h2 id="experience-title">
+                Todo lo que tus invitados necesitan.
+                <em>En un solo enlace.</em>
+            </h2>
+        </div>
+
+        <div class="experience-grid">
+
+            <div class="experience-card">
+                <span class="experience-icon" aria-hidden="true">♫</span>
+                <h3>Música</h3>
+                <p>Una melodía que acompañe cada momento de la invitación.</p>
+            </div>
+
+            <div class="experience-card">
+                <span class="experience-icon" aria-hidden="true">⌛</span>
+                <h3>Cuenta regresiva</h3>
+                <p>Que todos sepan cuánto falta para el gran día.</p>
+            </div>
+
+            <div class="experience-card">
+                <span class="experience-icon" aria-hidden="true">♡</span>
+                <h3>Galería</h3>
+                <p>Comparte tus mejores recuerdos y fotografías.</p>
+            </div>
+
+            <div class="experience-card">
+                <span class="experience-icon" aria-hidden="true">⌖</span>
+                <h3>Ubicación</h3>
+                <p>Facilita la llegada con acceso directo a Google Maps.</p>
+            </div>
+
+            <div class="experience-card">
+                <span class="experience-icon" aria-hidden="true">✉</span>
+                <h3>Confirmación</h3>
+                <p>Permite que tus invitados confirmen su asistencia.</p>
+            </div>
+
+            <div class="experience-card">
+                <span class="experience-icon" aria-hidden="true">✧</span>
+                <h3>Animaciones</h3>
+                <p>Detalles visuales que convierten la invitación en una experiencia.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========== PROCESO ========== -->
+<section class="process section" id="proceso" aria-labelledby="process-title">
+
+    <div class="container">
+
+        <div class="process-header">
+            <span class="section-kicker">FÁCIL Y PERSONALIZADO</span>
+            <h2 id="process-title">Así creamos tu <em>invitación.</em></h2>
+        </div>
+
+        <ol class="process-grid">
+
+            <li class="process-step">
+                <span class="process-number" aria-hidden="true">01</span>
+                <div class="process-icon" aria-hidden="true">♡</div>
+                <h3>Cuéntanos tu idea</h3>
+                <p>Elige una temática, diseño, paquete y comparte los detalles de tu celebración.</p>
+            </li>
+
+            <li class="process-step">
+                <span class="process-number" aria-hidden="true">02</span>
+                <div class="process-icon" aria-hidden="true">✧</div>
+                <h3>Diseñamos para ti</h3>
+                <p>Personalizamos tu invitación con fotos, colores, música y toda la información.</p>
+            </li>
+
+            <li class="process-step">
+                <span class="process-number" aria-hidden="true">03</span>
+                <div class="process-icon" aria-hidden="true">↗</div>
+                <h3>Recibe tu enlace</h3>
+                <p>Una vez terminado, tendrás tu invitación web lista para compartir.</p>
+            </li>
+
+        </ol>
+
+    </div>
+
+</section>
+
+
+<!-- ========== FAQ ========== -->
+<section class="faq section" id="preguntas" aria-labelledby="faq-title">
+
+    <div class="container faq-container">
+
+        <div class="faq-heading">
+            <span class="section-kicker">¿TIENES DUDAS?</span>
+            <h2 id="faq-title">Preguntas <em>frecuentes.</em></h2>
+            <p>Aquí encontrarás algunas respuestas sobre nuestras invitaciones digitales.</p>
+        </div>
+
+        <div class="faq-list">
+
+            <details class="faq-item">
+                <summary>
+                    ¿Cómo recibo mi invitación?
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        Recibirás un enlace exclusivo para tu invitación. Podrás compartirlo por
+                        WhatsApp, Facebook, Instagram o cualquier otro medio.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    ¿Mis invitados necesitan instalar alguna aplicación?
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        No. La invitación funciona desde el navegador de un celular, tablet o computadora.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    ¿Puedo elegir los colores y la temática?
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        Sí. Puedes personalizar colores, fotografías, tipografías, música, textos y temática.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    ¿Cuánto tiempo demora la elaboración?
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        El tiempo de elaboración depende del paquete y de las características solicitadas.
+                        Coordinaremos el plazo contigo antes de comenzar.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    ¿Se puede confirmar la asistencia?
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        Sí. El paquete Luxury puede incluir un sistema RSVP para que tus invitados
+                        confirmen su asistencia.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    ¿Puedo solicitar un diseño que no esté en el catálogo?
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        ¡Claro! Podemos desarrollar una invitación desde cero tomando como
+                        referencia tu temática e ideas.
+                    </p>
+                </div>
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========== CTA ========== -->
+<section class="cta-section" id="contacto" aria-labelledby="cta-title">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <span class="cta-kicker">TU HISTORIA MERECE SER CELEBRADA</span>
+
+            <h2 id="cta-title">Hagamos algo <em>inolvidable.</em></h2>
+
+            <p>
+                Cuéntanos cómo imaginas tus quince años. Nosotros nos encargamos de
+                convertir tu idea en una invitación especial.
+            </p>
+
+            <!-- El href real (wa.me) lo asigna el JS -->
+            <a href="#contacto" class="btn btn-cta" id="contactButton"
+               target="_blank" rel="noopener noreferrer">
+                Cotizar por WhatsApp <span aria-hidden="true">↗</span>
+            </a>
+
+            <p class="cta-note">
+                <span aria-hidden="true">♡</span>
+                Cotizaciones sin compromiso
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+            <a href="#inicio" class="brand" aria-label="Lúmina, ir al inicio">
+                <span class="brand-symbol" aria-hidden="true">L</span>
+                <span class="brand-name">
+                    LÚMINA
+                    <small>INVITACIONES DIGITALES</small>
+                </span>
+            </a>
+            <p>Creamos invitaciones digitales para momentos que merecen ser recordados.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Explorar">
+            <span class="footer-title">EXPLORAR</span>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Diseños</a>
+            <a href="#paquetes">Paquetes</a>
+            <a href="#proceso">Cómo funciona</a>
+        </nav>
+
+        <nav class="footer-links" aria-label="Contacto">
+            <span class="footer-title">CONTACTO</span>
+            <a href="#contacto">Solicitar cotización</a>
+            <a href="#preguntas">Preguntas frecuentes</a>
+        </nav>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>
+            © <span id="currentYear">2026</span> Lúmina Invitaciones. Diseñado con dedicación.
+        </p>
+        <a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+
+</footer>
+
+
+<!-- ========== WHATSAPP FLOTANTE ========== -->
+<a href="#contacto" class="whatsapp-float" id="whatsappFloat"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.61 4.53 1.76 6.5L3 29l6.67-1.75A12.95 12.95 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.7c-2.1 0-4.16-.57-5.94-1.65l-.42-.25-3.96 1.04 1.06-3.86-.28-.44A10.65 10.65 0 1 1 16 26.7zm5.85-7.97c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.33-.85 1.05-1.04 1.27-.19.22-.38.25-.7.08-.32-.16-1.35-.5-2.57-1.58-.95-.84-1.59-1.87-1.77-2.2-.19-.32-.02-.5.14-.67.15-.15.32-.38.49-.57.16-.19.22-.33.32-.55.11-.22.05-.41-.03-.57-.08-.16-.73-1.76-1-2.4-.27-.63-.54-.54-.74-.55h-.63c-.22 0-.57.08-.87.41-.3.33-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.3 3.52 5.58 4.94.78.34 1.39.55 1.86.7.78.25 1.49.21 2.05.13.62-.09 1.9-.78 2.17-1.54.27-.76.27-1.41.19-1.54-.08-.14-.3-.22-.62-.38z"/>
+    </svg>
+</a>
+
+
+<!-- ========== MODAL DE VISTA PREVIA ========== -->
+<div class="preview-modal" id="previewModal" aria-hidden="true">
+
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="preview-modal-container"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="previewTitle">
+
+        <button type="button" class="modal-close" id="modalClose" aria-label="Cerrar vista previa">
+            <span aria-hidden="true">×</span>
+        </button>
+
+        <div class="preview-modal-header">
+            <span class="preview-modal-label">DEMOSTRACIÓN</span>
+            <span class="preview-modal-title" id="previewTitle">Invitación digital</span>
+        </div>
+
+        <div class="preview-device">
+
+            <div class="preview-device-notch" aria-hidden="true"></div>
+
+            <div class="preview-screen" id="previewScreen">
+
+                <!-- El JS genera aquí la demo -->
+                <div class="preview-placeholder" id="previewPlaceholder">
+
+                    <div class="placeholder-decoration" aria-hidden="true">✦</div>
+
+                    <span>UNA CELEBRACIÓN ESPECIAL</span>
+
+                    <h2>Mis XV <em>Años</em></h2>
+
+                    <p>Una invitación para recordar</p>
+
+                    <button type="button" class="preview-open-btn" id="previewOpenButton">
+                        Abrir invitación <span aria-hidden="true">♡</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="preview-modal-footer">
+            <p>Esta es una demostración. El diseño final se personalizará con tus datos.</p>
+
+            <button type="button" class="preview-quote-btn" id="previewQuoteButton">
+                Quiero este diseño <span aria-hidden="true">↗</span>
+            </button>
+        </div>
+
+    </div>
+
 </div>
 
 
-           <section class="features section">
-        <span class="eyebrow">CADA DETALLE IMPORTA</span>
-        <h2>Una experiencia que va <em>más allá del papel.</em></h2>
+<script src="js/main.js" defer></script>
 
-        <div class="features-grid">
-            <div class="feature">
-                <span>01</span><h3>Diseño personalizado</h3>
-                <p>Colores, fotografías y temática elegidos para tu celebración.</p>
-            </div>
-            <div class="feature">
-                <span>02</span><h3>Experiencia interactiva</h3>
-                <p>Música, animaciones, galerías y cuenta regresiva.</p>
-            </div>
-            <div class="feature">
-                <span>03</span><h3>Ubicación inteligente</h3>
-                <p>Tus invitados podrán encontrar el lugar con Google Maps.</p>
-            </div>
-            <div class="feature">
-                <span>04</span><h3>Confirmación digital</h3>
-                <p>Facilita la organización de tu evento con RSVP.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing section" id="paquetes">
-        <div class="section-heading">
-            <div>
-                <span class="eyebrow">NUESTROS PAQUETES</span>
-                <h2>Elige cómo quieres <em>celebrar.</em></h2>
-            </div>
-            <p>Opciones diseñadas para diferentes estilos y necesidades.</p>
-        </div>
-
-        <div class="pricing-grid">
-            <article class="price-card">
-                <span class="package-label">ESENCIAL</span>
-                <h3>Premium</h3>
-                <div class="price">S/150</div>
-                <p>Una invitación elegante y funcional.</p>
-                <ul>
-                    <li>✓ Diseño personalizado</li>
-                    <li>✓ Pantalla de bienvenida y música</li>
-                    <li>✓ Fecha y ubicación con Maps</li>
-                    <li>✓ Cuenta regresiva</li>
-                    <li>✓ Galería de fotografías</li>
-                    <li>✓ Dress code y regalos</li>
-                    <li>✓ Animaciones y enlace web</li>
-                </ul>
-                <a href="#" class="btn btn-outline choose-package" data-package="Premium - S/150">Solicitar paquete</a>
-            </article>
-
-            <article class="price-card featured">
-                <span class="popular">MÁS SOLICITADO</span>
-                <span class="package-label">EXPERIENCIA</span>
-                <h3>Luxury</h3>
-                <div class="price">S/200</div>
-                <p>Más interacción y confirmación de invitados.</p>
-                <ul>
-                    <li>✓ Todo lo incluido en Premium</li>
-                    <li>✓ Apertura interactiva</li>
-                    <li>✓ Confirmación RSVP</li>
-                    <li>✓ Registro de respuestas</li>
-                    <li>✓ Galería dinámica</li>
-                    <li>✓ Efectos especiales</li>
-                </ul>
-                <a href="#" class="btn btn-gold choose-package" data-package="Luxury - S/200">Solicitar paquete</a>
-            </article>
-
-            <article class="price-card">
-                <span class="package-label">PERSONALIZACIÓN</span>
-                <h3>Luxury Plus</h3>
-                <div class="price">S/250</div>
-                <p>Una propuesta más elaborada y exclusiva.</p>
-                <ul>
-                    <li>✓ Todo lo incluido en Luxury</li>
-                    <li>✓ Historia de la quinceañera</li>
-                    <li>✓ Itinerario del evento</li>
-                    <li>✓ Galería ampliada</li>
-                    <li>✓ Animaciones personalizadas</li>
-                    <li>✓ Secciones especiales</li>
-                </ul>
-                <a href="#" class="btn btn-outline choose-package" data-package="Luxury Plus - S/250">Solicitar paquete</a>
-            </article>
-
-            <article class="price-card">
-                <span class="package-label">EXCLUSIVIDAD</span>
-                <h3>Luxury Exclusive</h3>
-                <div class="price">S/280</div>
-                <p>Una experiencia creada a medida.</p>
-                <ul>
-                    <li>✓ Todo lo incluido en Luxury Plus</li>
-                    <li>✓ Diseño desde cero</li>
-                    <li>✓ Apertura cinematográfica</li>
-                    <li>✓ Interacciones especiales</li>
-                    <li>✓ Panel privado básico</li>
-                    <li>✓ Gestión de confirmaciones</li>
-                </ul>
-                <a href="#" class="btn btn-outline choose-package" data-package="Luxury Exclusive - S/280">Solicitar paquete</a>
-            </article>
-        </div>
-
-        <p class="pricing-note">Los precios no incluyen dominio propio, servicios externos ni mantenimiento posterior. El alcance del panel y las funcionalidades se acuerda al contratar.</p>
-    </section>
-
-    <section class="process section" id="proceso">
-        <span class="eyebrow">ASÍ DE FÁCIL ES</span>
-        <h2>Tu invitación en <em>cuatro pasos.</em></h2>
-
-        <div class="steps">
-            <div><span>01</span><h3>Elige tu paquete</h3><p>Cuéntanos qué tipo de celebración estás organizando.</p></div>
-            <div><span>02</span><h3>Personalizamos</h3><p>Definimos temática, fotografías, colores y contenido.</p></div>
-            <div><span>03</span><h3>Revisamos</h3><p>Te mostramos la invitación para realizar los ajustes acordados.</p></div>
-            <div><span>04</span><h3>¡Comparte!</h3><p>Recibes tu enlace y puedes enviarlo a tus invitados.</p></div>
-        </div>
-    </section>
-
-    <section class="contact section" id="contacto">
-        <span class="eyebrow">EMPECEMOS A CREAR</span>
-        <h2>Tu próxima celebración merece algo <em>extraordinario.</em></h2>
-        <p>Cuéntanos tu idea y diseñaremos una invitación especial para ti.</p>
-        <a href="#" class="btn btn-gold" id="contactButton">Cotizar por WhatsApp ↗</a>
-    </section>
-</main>
-
-<footer class="footer">
-    <a href="#inicio" class="logo">LÚMINA<span>.</span></a>
-    <p>Diseñamos momentos que merecen ser recordados.</p>
-    <small>© <span id="year"></span> Lúmina Invitaciones. Todos los derechos reservados.</small>
-</footer>
-
-<a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Contactar por WhatsApp">✆</a>
-
-<script src="js/main.js"></script>
 </body>
 </html>
